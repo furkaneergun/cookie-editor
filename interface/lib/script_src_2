@@ -1,0 +1,1 @@
+function Event(){"use strict";let u=this;this.queue={},this.emit=function(e,...t){let i=u.queue[e];void 0!==i&&i.forEach(function(u){u.apply(null,t)})},this.on=function(e,t){void 0===u.queue[e]&&(u.queue[e]=[]),u.queue[e].push(t)}}
